@@ -1,0 +1,117 @@
+meta:
+  name: "Signal Framework"
+  version: "1.0.0"
+  owner: "Sebastian"
+
+framework:
+
+  scope:
+    in_scope:
+      - tools
+      - courses
+      - books
+      - services
+      - platforms
+      - workflows
+      - methodologies
+      - technologies
+    out_of_scope_examples:
+      - sports analysis
+      - celebrity opinions
+      - unrelated entertainment topics
+
+  rubric:
+    scale:
+      min: 1
+      max: 3
+      standard_labels:
+        "1": "Low / Negative"
+        "2": "Contextual / Moderate"
+        "3": "Clearly Positive"
+      inverse_labels:
+        "1": "High Risk"
+        "2": "Moderate Risk"
+        "3": "Low Risk"
+
+    criteria:
+      - key: strategic_fit
+        label: "Strategic Fit"
+        type: standard
+
+      - key: decision_clarity
+        label: "Decision Clarity"
+        type: standard
+
+      - key: output_quality
+        label: "Output Quality"
+        type: standard
+
+      - key: repeatable_speed
+        label: "Repeatable Speed"
+        type: standard
+
+      - key: reusable_assets
+        label: "Reusable Assets"
+        type: standard
+
+      - key: cognitive_load
+        label: "Cognitive Load"
+        type: inverse
+
+      - key: lock_in_risk
+        label: "Lock-in Risk"
+        type: inverse
+
+      - key: privacy_reputation_risk
+        label: "Privacy / Reputation Risk"
+        type: inverse
+
+  decision_rules:
+    thresholds:
+      integrate_min_average: 2.2
+      sandbox_min_average: 2.0
+
+    veto_rules:
+      - condition: "lock_in_risk == 1"
+        decision: discard
+      - condition: "privacy_reputation_risk == 1"
+        decision: discard
+
+  source_policy:
+    require_web_search_if_url: true
+    require_web_search_if_time_sensitive: true
+    preferred_sources:
+      - official_documentation
+      - github_repositories
+      - technical_writeups
+    avoid_sources:
+      - pure_marketing_pages
+    if_insufficient_data: "state limitations; do not fabricate"
+
+  guardrails:
+    use_tables: false
+    add_new_criteria: false
+    reinterpret_scoring: false
+    change_structure: false
+
+profile:
+
+  role: "Product Designer"
+
+  objectives:
+    short_term: "Consolidate brand promise and advance toward senior product direction while maintaining execution capability."
+    long_term: "Internationalize practice and build durable side projects into strategic assets."
+
+  principles:
+    - "Direction over novelty."
+    - "Prefer reusable assets over one-off efficiency gains."
+    - "Protect deep work windows."
+    - "Minimize tool stack complexity."
+    - "If it can be ignored for 3 months safely, it is not urgent."
+    - "Avoid lock-in unless it creates clear structural advantage."
+    - "Evidence before integration."
+    - "Ship value; do not adopt tools as procrastination."
+
+thresholds_override: null  # Optional future override; currently inactive
+
+risk_tolerance: "medium"  # Descriptive only; does not affect numeric thresholds

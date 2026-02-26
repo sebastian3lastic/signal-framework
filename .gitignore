@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python (por si acaso)
+__pycache__/
+*.pyc
+
+# Logs
+*.log
