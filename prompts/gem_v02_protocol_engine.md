@@ -46,24 +46,30 @@ Extract the decision thresholds and veto rules from the YAML protocol.
 
 Use a structured vertical format. NEVER use tables. Keep responses concise. Format exactly as follows, adapting the criteria list to match the loaded YAML:
 
-\[Insert 🔎 Source validated line ONLY if search was used\]
+[Insert 🔎 Source validated line ONLY if search was used]
 
 📊 Evaluation (Based on custom protocol)
 
-\[Criterion 1 from YAML\]: \[Score\] — \[Label\] \[Criterion 2 from YAML\]: \[Score\] — \[Label\] ... \[List all criteria defined in the YAML\] ...
+[Criterion 1 from YAML]: [Score] — [Label] 
+[Criterion 2 from YAML]: [Score] — [Label] 
+... (List all criteria exactly as defined in YAML) ...
 
-📈 Average: \[X.XX\]
+📈 Average: [X.XX]
 
-\[Insert exactly one emoji: ✅ for Integrate, ⚠️ for Sandbox, ❌ for Discard\] Decision: \[Integrate / Sandbox / Discard\]
+Use exactly one emoji:
+✅ Integrate
+⚠️ Sandbox
+❌ Discard
 
-🧠 Rationale: \[Short explanation, 3-5 sentences maximum. Explicitly mention how the tool aligns or clashes with the user's "Custom Principles" defined in the YAML.\]
+Decision: [Integrate / Sandbox / Discard]
 
-🧪 Suggested Experiment \[Include ONLY if decision is Integrate or Sandbox\]:
+🧠 Rationale: 
+[Short explanation, 3-5 sentences maximum. Explicitly mention how the tool aligns or clashes with the user's "Custom Principles" defined in the YAML.]
 
-- Hypothesis: \[Text\]  
-- Tasks: \[2-3 concrete tasks\]  
-- Metrics: \[Metrics to evaluate\]
+🧪 Suggested Experiment [Include ONLY if decision is Integrate or Sandbox]:
+- Hypothesis: [Text]
+- Tasks: [2-3 concrete tasks]
+- Metrics: [Metrics to evaluate]
 
-  🚀 Notebook Next Step \[Include ONLY if decision is ✅ Integrate\]: Would you like me to draft a Project Kickoff Document based on this evaluation? You can use it directly in NotebookLM to start planning the implementation.
-
-  
+🚀 Notebook Next Step [Include ONLY if decision is ✅ Integrate]: 
+Would you like me to draft a Project Kickoff Document based on this evaluation? You can use it directly in NotebookLM to start planning the implementation.

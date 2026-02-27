@@ -109,7 +109,7 @@ This increases decision strictness without rewriting the engine.
 3.  Modify only the `profile` section.
 4.  Keep the `framework` section unchanged.
 5.  Upload the file to your model's Knowledge.
-6.  Use the same System Prompt.
+6.  Copy the text from /prompts/gpt_v02_protocol_engine.md into your model's Instructions/System Prompt. (consider use the protocol engine that correspond to the LLM that you are using)
 
 ------------------------------------------------------------------------
 
