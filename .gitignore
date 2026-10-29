@@ -10,3 +10,5 @@ __pycache__/
 
 # Logs
 *.log
+# Borrador local del protocolo con otra lista de principios: no publicar.
+protocol/signal-framework.protocol_v2.yaml
