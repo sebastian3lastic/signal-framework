@@ -94,6 +94,13 @@ framework:
     reinterpret_scoring: false
     change_structure: false
 
+# ---------------------------------------------------------------------------
+# EXAMPLE PROFILE: do not use it as is.
+# It shows how a profile is filled in. Replace role, objectives and principles
+# with your own before evaluating anything (see docs/adopt_your_own.md).
+# The principles below are Elastic's, quoted verbatim from its manifesto:
+# https://3lastic.com/en/manifesto/
+# ---------------------------------------------------------------------------
 profile:
 
   role: "Product Designer"
@@ -103,14 +110,11 @@ profile:
     long_term: "Internationalize practice and build durable side projects into strategic assets."
 
   principles:
-    - "Direction over novelty."
-    - "Prefer reusable assets over one-off efficiency gains."
-    - "Protect deep work windows."
-    - "Minimize tool stack complexity."
-    - "If it can be ignored for 3 months safely, it is not urgent."
-    - "Avoid lock-in unless it creates clear structural advantage."
-    - "Evidence before integration."
-    - "Ship value; do not adopt tools as procrastination."
+    - "Good design does not decorate: it sets direction."
+    - "We prefer a clear decision to a comfortable solution."
+    - "Focus does not limit: it defines."
+    - "Learning reduces uncertainty; it does not prolong it."
+    - "Coherence sustains trust."
 
 thresholds_override: null  # Optional future override; currently inactive
 
